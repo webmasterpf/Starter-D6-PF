@@ -73,7 +73,7 @@ body {
 	margin:0 auto;
 	padding:0;
 	width: 990px;
-	background-color:#CCC;
+	background-color:RosyBrown;
 }
 #content-inner,#left-content,#right-content{
 height: 100%;
@@ -82,7 +82,7 @@ height: 100%;
 #content-top{
 	margin:0 auto;
 	padding:5px;
-	width:990px;
+	width:auto;
 	height:auto;
 	background-color: #999;
 }

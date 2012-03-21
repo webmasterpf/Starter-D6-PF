@@ -374,3 +374,75 @@ background-position: 0 -100px;
   -webkit-border-top-right-radius: 0;
   -webkit-border-bottom-left-radius: 0;
 }
+/*------------------------------------------------*/
+/*--------------- MEGAMENU SUPERFISH STYLE--------------*/
+/*--- Avec choix du style Horizontal Slide Vertical StyleCSS:Aucun-----*/
+/*------------------------------------------------*/
+.sf-menu.sf-assopf{
+    background: none repeat scroll 0 0 gainsboro;
+    clear: left;
+  
+}
+ul.sf-menu.sf-assopf{
+    margin: 11px 0 0;
+    padding: 0;
+    background: #888;
+}
+.sf-menu.sf-assopf ul.sf-megamenu{
+    background: red;
+}
+.sf-menu.sf-assopf ul.sf-megamenu li.sf-megamenu-wrapper ol, .sf-menu.sf-assopf ul.sf-megamenu li.sf-megamenu-wrapper ol li {
+    margin: 0;
+    padding: 0;
+}
+/*Sous rubriques*/
+.sf-menu.sf-assopf ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent {
+    font-weight: bold;
+}
+.sf-menu.sf-assopf ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent,.sf-menu.sf-assopf ul.sf-megamenu .sf-no-children a,
+.sf-menu.sf-assopf ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column a{
+ background: #01AAD3;
+}
+.sf-menu.sf-assopf ul.sf-megamenu li.sf-megamenu-wrapper a.menuparent :hover,.sf-menu.sf-assopf ul.sf-megamenu .sf-no-children a:hover,
+.sf-menu.sf-assopf ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column a:hover{
+    background: #911381;
+}
+.sf-menu.sf-assopf ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+    display: inline;
+    float: left;
+    width: 12em;
+}
+
+.sf-menu.sf-assopf.rtl ul.sf-megamenu li.sf-megamenu-wrapper ol li.sf-megamenu-column {
+    float: right;
+}
+.sf-menu.sf-assopf li.sf-parent-children-1 ul.sf-megamenu {
+    width: 12em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-2 ul.sf-megamenu {
+    width: 24em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-3 ul.sf-megamenu {
+    width: 36em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-4 ul.sf-megamenu {
+    width: 48em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-5 ul.sf-megamenu {
+    width: 60em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-6 ul.sf-megamenu {
+    width: 72em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-7 ul.sf-megamenu {
+    width: 84em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-8 ul.sf-megamenu {
+    width: 96em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-9 ul.sf-megamenu {
+    width: 108em;
+}
+.sf-menu.sf-assopf li.sf-parent-children-10 ul.sf-megamenu {
+    width: 120em;
+}
