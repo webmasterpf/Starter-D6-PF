@@ -2,23 +2,17 @@
 global $theme_path;
 include ($theme_path.'/includes/inc_header.php');
 ?>
-  <!-- ______________________ CONTENU _______________________ -->
+      <!-- ______________________ STORY TPL _______________________ --> 
+
+<!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
       
    
       
-       <!-- ______________________ COLONNE GAUCHE _______________________ -->
-		
-			  <?php if ($left): ?>
-         <div id="left-content">
-            <?php print $left; ?>
-          </div>
-             <?php endif; ?> <!-- /sidebar-left -->
-		
-		<!--fin du contenu gauche -->
+       
         
-        <div id="content-inner" class="inner column center">
+        <div id="content-inner" class="inner column center story">
 		
 			<?php if ($breadcrumb || $title ||$content_top ): ?>
             <div id="content-top">
@@ -48,7 +42,7 @@ include ($theme_path.'/includes/inc_header.php');
             </div> <!-- /#content-header -->
           <?php endif; ?>
 		  <!-- ______________________ CONTENU CENTRAL _______________________ -->
-          <div id="middle-content">
+          <div id="middle-content-story">
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
@@ -75,19 +69,7 @@ include ($theme_path.'/includes/inc_header.php');
         <?php endif; ?>
 
        
-		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
-         <!--d�but du contenu droit -->
-		<div id="right-content">
-			<?php if ($search_box) : ?>
-				<div id="recherche">
-				<?php print $search_box ?>
-				</div><!-- //div recherche -->
-				<?php endif; ?>
-            <?php print $right; ?>
-        </div>
-        <?php endif; ?> <!-- /sidebar-right -->
-
+		
    
     	  <br clear="all" />
 	 </div> <!-- /contentPage -->

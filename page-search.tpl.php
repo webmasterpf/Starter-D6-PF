@@ -2,33 +2,37 @@
 global $theme_path;
 include ($theme_path.'/includes/inc_header.php');
 ?>
+ <!-- ______________________ LAYOUT PAGE RECHERCHE _______________________ -->
   <!-- ______________________ CONTENU _______________________ -->
   
       <div id="contentPage">
       
-   
+          <!-- ______________________ CONTENT TOP _______________________ -->
+      <?php if ($breadcrumb ||$content_top ): ?>
+            <div id="content-top">
+	<span id="ariane"> <?php print $breadcrumb; ?></span>
+
+              <?php print $content_top; ?>
+            </div> <!-- /#content-top -->
+	  
       
        <!-- ______________________ COLONNE GAUCHE _______________________ -->
 		
-			  <?php if ($left): ?>
+			  
          <div id="left-content">
+           <?php if ($title): ?>
+                <h1 class="title"><?php print $title; ?></h1>
+              <?php endif; ?>
             <?php print $left; ?>
           </div>
-             <?php endif; ?> <!-- /sidebar-left -->
+            <!-- /sidebar-left -->
 		
 		<!--fin du contenu gauche -->
         
         <div id="content-inner" class="inner column center">
-		
-			<?php if ($breadcrumb || $title ||$content_top ): ?>
-            <div id="content-top">
-			 <?php print $breadcrumb; ?>
-			 <?php if ($title): ?>
-                <h1 class="title"><?php print $title; ?></h1>
-              <?php endif; ?>
-              <?php print $content_top; ?>
-            </div> <!-- /#content-top -->
-            <?php endif; ?>
+		             
+		 
+           
 
           <?php if ($mission || $messages || $help || $tabs): ?>
             <div id="content-header">              
@@ -52,21 +56,14 @@ include ($theme_path.'/includes/inc_header.php');
             <?php print $content; ?>
               <?php print $feed_icons; ?>
           </div> <!-- /#content-area -->
-<?php if ($frontpageSlideshow): ?>
-         <div id="fps">
-            <?php print $frontpageSlideshow; ?>
-          </div>
-             <?php endif; ?>
+
         
 
-          <?php if ($content_bottom): ?>
-            <div id="content-bottom">
-              <?php print $content_bottom; ?>
-            </div><!-- /#content-bottom -->
-          <?php endif; ?>
+          
           
       </div> <!-- /content-inner /content -->
 
+            
         <?php if (!empty($primary_links) or !empty($secondary_links)): ?>
           <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "with-main-menu"; } if (!empty($secondary_links)) { print " with-sub-menu"; } ?>">
             <?php if (!empty($primary_links)){ print theme('links', $primary_links, array('id' => 'primary', 'class' => 'links main-menu')); } ?>
@@ -76,25 +73,27 @@ include ($theme_path.'/includes/inc_header.php');
 
        
 		  <!-- ______________________ COLONNE DROITE _______________________ -->
-        <?php if ($right): ?>
+       
          <!--d�but du contenu droit -->
 		<div id="right-content">
-			<?php if ($search_box) : ?>
-				<div id="recherche">
-				<?php print $search_box ?>
-				</div><!-- //div recherche -->
-				<?php endif; ?>
+				
             <?php print $right; ?>
         </div>
-        <?php endif; ?> <!-- /sidebar-right -->
+        <!-- /sidebar-right -->
 
    
-    	  <br clear="all" />
+    	 <br clear="all"/>
+         <!-- ______________________ CONTENU BAS _______________________ -->
+<?php if ($content_bottom): ?>
+            <div id="content-bottom">
+              <?php print $content_bottom; ?>
+            </div><!-- /#content-bottom -->
+          <?php endif; ?>
 	 </div> <!-- /contentPage -->
 	  
 	<?php
 global $theme_path;
 include ($theme_path.'/includes/inc_footer.php');
 ?>
-    
+         <?php endif; ?>
      

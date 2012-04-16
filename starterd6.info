@@ -32,6 +32,8 @@ stylesheets[all][] = css/navigation/superfish/superfish-navbar.css
 ;CSS Override pour le site : Galeries
 stylesheets[all][] = css/css_galeries/views_galleriffic_default.css
 stylesheets[all][] = css/css_galeries/views_showcase.css
+;CSS Slideshow Contenu Star
+stylesheets[all][] = css/css_galeries/slideshow-content-star.css
 
 regions[header] = Header
 regions[menuDyn] = Menu Header - Menu dynamique JS
@@ -56,6 +58,9 @@ regions[projets] = Zone pour les projets - Vue Bloc
 regions[intervenants] = Zone pour les Intervenants - Vue Bloc
 ;Region pour formulaire
 regions[formulaire] = Formulaire (centre) - Webform Bloc
+;Region pour slideshow
+regions[frontpageSlideshow] = Zone Frontpage Slideshow
+
 
 settings[basic_zen_tabs]             = 1
 settings[basic_wireframe]            = 0

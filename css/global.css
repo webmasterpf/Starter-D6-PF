@@ -82,7 +82,12 @@ text-align:left;
 li.node_read_more a:hover{
 text-decoration: underline;
 }
-
+/*
+BLOC CONNEXION COLORBOX==================================
+*/
+#colorbox #user-login .item-list{}
+#colorbox #user-login .item-list a{color: #E85134;text-decoration: none;}
+#colorbox #user-login .item-list a:hover{text-decoration: underline;}
 
 
 /*---------------------------*/

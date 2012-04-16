@@ -111,19 +111,20 @@ height: 100%;
 }
 /*inner content*/
 #content-inner{
-width:590px;
+width:auto;
 margin:0 auto;
 float:left;
-background-color:blue;
+background-color: #CFD0D2;
 }
 /*///    partie du centre   ///*/
 #middle-content{
 	float:left;
 	position:relative;
 	background-color:yellow;
-	width:590px;
+	
 	padding:5px;
 }
+
 .swftools-wrapper wijering-imagerotator{
 margin: 0 auto;
 width: auto;
@@ -189,3 +190,11 @@ width:590px;
 .col3_layout_200_590_200{}
 .col3_layout_330_all{}
 .col3_layout_18_56_25{}
+/*  PAGE STORY TPL  */
+#middle-content-story{
+    width: 95%;
+    margin: 0 auto;
+}
+.story{
+    
+}
