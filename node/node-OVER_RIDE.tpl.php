@@ -15,9 +15,8 @@
             <?php if ($title): /*copier le titre dans la colonne desirée*/?>
             <h1 class="titre_page"><?php print $title; ?></h1>
             <?php endif; ?>
-             <?php
-              global $theme_path;
-              include ($theme_path.'/includes/inc_region_col_G1.php');
+             <?
+             echo drupal_get_path.('theme','nom_du_theme'),'/includes/inc_region_col_G1.php');
               ?>
         </div>
         <!--______________COLONNE 2________________ -->
